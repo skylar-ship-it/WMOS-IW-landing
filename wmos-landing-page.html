@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Full-Arch Dental Implants — West Michigan Oral & Maxillofacial Surgery × Implanted Wisdom. Board-certified surgeons across Grand Haven, Grandville, North Holland and South Holland.">
+<title>WMOS × Implanted Wisdom — Full-Arch Dental Implants in West Michigan</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #1E1612;
+    --espresso: #2D241F;
+    --gold: #C9A96E;
+    --gold-deep: #A8884F;
+    --gold-light: #DCC393;
+    --teal: #245C5C;
+    --teal-deep: #1A4040;
+    --cream: #F7F2EC;
+    --cream-deep: #EDE5D7;
+    --white: #FFFFFF;
+    --muted: #8B7E73;
+    --muted-dark: #5F5651;
+
+    --serif: 'Cormorant Garamond', serif;
+    --body: 'Jost', sans-serif;
+    --mono: 'Courier Prime', monospace;
+
+    --shadow-sm: 0 2px 8px rgba(30, 22, 18, 0.06);
+    --shadow-md: 0 8px 24px rgba(30, 22, 18, 0.10);
+    --shadow-lg: 0 20px 48px rgba(30, 22, 18, 0.14);
+    --shadow-xl: 0 32px 80px rgba(30, 22, 18, 0.18);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--body);
+    font-weight: 300;
+    color: var(--ink);
+    background: var(--white);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  img { max-width: 100%; display: block; height: auto; }
+  a { color: inherit; text-decoration: none; }
+
+  /* DEMO BANNER */
+  .demo-banner {
+    background: linear-gradient(135deg, var(--espresso) 0%, var(--ink) 100%);
+    color: var(--cream);
+    padding: 10px 24px;
+    text-align: center;
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--gold);
+  }
+  .demo-banner em {
+    font-style: normal;
+    color: var(--gold);
+    font-weight: 700;
+    margin: 0 6px;
+  }
+
+  /* ==================== HEADER ==================== */
+  .site-header {
+    background: var(--white);
+    border-bottom: 1px solid rgba(201, 169, 110, 0.18);
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.95);
+  }
+  .header-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .brand-lockup {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .brand-mark {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+  }
+  .brand-mark .primary {
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    color: var(--espresso);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+  .brand-mark .secondary {
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.18em;
+    color: var(--gold-deep);
+    margin-top: 2px;
+    font-weight: 700;
+  }
+  .brand-divider {
+    width: 1px;
+    height: 32px;
+    background: var(--gold);
+    opacity: 0.5;
+  }
+  .iw-mark {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.5rem;
+    color: var(--gold);
+    font-weight: 500;
+  }
+
+  .header-cta-wrap {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .header-phone {
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    color: var(--espresso);
+    letter-spacing: 0.05em;
+    font-weight: 700;
+  }
+  .header-cta {
+    background: var(--espresso);
+    color: var(--cream);
+    padding: 12px 28px;
+    border-radius: 999px;
+    font-family: var(--body);
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border: 1px solid var(--espresso);
+  }
+  .header-cta:hover {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--espresso);
+  }
+
+  @media (max-width: 768px) {
+    .header-phone { display: none; }
+    .brand-mark .secondary { display: none; }
+  }
+
+  /* ==================== HERO ==================== */
+  .hero {
+    background: var(--espresso);
+    color: var(--cream);
+    padding: 90px 0 110px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.75;
+  }
+  .hero-video-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+      linear-gradient(105deg, rgba(45, 36, 31, 0.65) 0%, rgba(45, 36, 31, 0.40) 50%, rgba(45, 36, 31, 0.20) 100%);
+    pointer-events: none;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    width: 60%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(201, 169, 110, 0.06) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 2;
+  }
+  .hero-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+  }
+
+  .hero-eyebrow {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    width: 32px;
+    height: 1px;
+    background: var(--gold);
+  }
+
+  .hero-title {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(2.4rem, 5.6vw, 4.6rem);
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+    margin-bottom: 1.6rem;
+    color: var(--cream);
+  }
+  .hero-title em {
+    color: var(--gold);
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .hero-lede {
+    font-size: 1.075rem;
+    color: var(--cream-deep);
+    line-height: 1.7;
+    max-width: 540px;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-cta-row {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+  }
+  .btn-primary, .btn-secondary {
+    padding: 16px 36px;
+    border-radius: 999px;
+    font-family: var(--body);
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    border: 1px solid;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .btn-primary {
+    background: var(--gold);
+    color: var(--espresso);
+    border-color: var(--gold);
+  }
+  .btn-primary:hover {
+    background: var(--gold-light);
+    border-color: var(--gold-light);
+    transform: translateY(-2px);
+  }
+  .btn-secondary {
+    background: transparent;
+    color: var(--cream);
+    border-color: var(--cream);
+  }
+  .btn-secondary:hover {
+    background: var(--cream);
+    color: var(--espresso);
+  }
+
+  .hero-trust {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(201, 169, 110, 0.2);
+  }
+  .hero-trust-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    color: var(--gold-light);
+  }
+  .hero-trust-item .dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--gold);
+  }
+
+  /* HERO BEFORE/AFTER FRAME */
+  .hero-ba {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    width: 100%;
+    background: var(--ink);
+    border-radius: 4px;
+    box-shadow: var(--shadow-xl);
+    overflow: hidden;
+  }
+  .hero-ba-photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .hero-ba-label {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Courier Prime', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--cream);
+    background: rgba(30, 22, 18, 0.75);
+    padding: 6px 14px;
+    border-radius: 999px;
+    backdrop-filter: blur(4px);
+    z-index: 2;
+    font-weight: 700;
+  }
+  .hero-ba-label-top { top: 18px; }
+  .hero-ba-label-bottom { bottom: 90px; }
+  .hero-ba-caption {
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%) translateY(60%);
+    background: var(--espresso);
+    border: 1px solid var(--gold);
+    padding: 14px 24px;
+    border-radius: 999px;
+    text-align: center;
+    z-index: 3;
+    box-shadow: var(--shadow-md);
+    white-space: nowrap;
+  }
+  .hero-ba-caption-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--gold);
+    line-height: 1.2;
+  }
+  .hero-ba-caption-loc {
+    font-family: 'Courier Prime', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    color: var(--cream);
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+
+  @media (max-width: 900px) {
+    .hero-inner { grid-template-columns: 1fr; gap: 4rem; }
+    .hero-ba { max-width: 480px; margin: 0 auto; }
+  }
+
+  /* ==================== TRUST BAND ==================== */
+  .trust-band {
+    background: var(--cream);
+    padding: 50px 0;
+    border-bottom: 1px solid rgba(201, 169, 110, 0.18);
+  }
+  .trust-band-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  .trust-stat {
+    text-align: center;
+  }
+  .trust-stat-num {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  .trust-stat-label {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--espresso);
+    font-weight: 700;
+  }
+  .trust-stat-sub {
+    font-size: 0.75rem;
+    color: var(--muted-dark);
+    margin-top: 0.3rem;
+    font-weight: 300;
+  }
+  @media (max-width: 700px) {
+    .trust-band-inner { grid-template-columns: repeat(2, 1fr); gap: 2.5rem 1.5rem; }
+  }
+
+  /* ==================== SECTION DEFAULTS ==================== */
+  section {
+    padding: 110px 0;
+    position: relative;
+  }
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+  .section-header {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 4rem;
+  }
+  .section-eyebrow {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .section-eyebrow::before, .section-eyebrow::after {
+    content: '';
+    width: 24px;
+    height: 1px;
+    background: var(--gold);
+  }
+  .section-title {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(2rem, 4.4vw, 3.4rem);
+    line-height: 1.1;
+    color: var(--espresso);
+    letter-spacing: -0.012em;
+    margin-bottom: 1.5rem;
+  }
+  .section-title em {
+    color: var(--gold);
+    font-style: italic;
+  }
+  .section-lede {
+    font-size: 1.05rem;
+    color: var(--muted-dark);
+    line-height: 1.7;
+  }
+
+  /* ==================== I WILL PROMISE ==================== */
+  .promise {
+    background: var(--cream);
+  }
+  .promise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-top: 1rem;
+  }
+  .promise-card {
+    background: var(--espresso);
+    color: var(--cream);
+    padding: 2.5rem 2rem;
+    border-radius: 4px;
+    border: 1px solid rgba(201, 169, 110, 0.3);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  .promise-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+  .promise-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+  }
+  .promise-card:hover::before { transform: scaleX(1); }
+  .promise-tag {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .promise-text {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.45rem;
+    line-height: 1.3;
+    color: var(--cream);
+    font-weight: 400;
+  }
+  @media (max-width: 800px) {
+    .promise-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 500px) {
+    .promise-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ==================== BEFORE / AFTER GALLERY ==================== */
+  .ba-gallery {
+    background: var(--white);
+  }
+  .ba-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .ba-card {
+    background: var(--cream);
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgba(201, 169, 110, 0.18);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  .ba-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+  .ba-card-imgwrap {
+    position: relative;
+    aspect-ratio: 1;
+    background: var(--espresso);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .ba-half {
+    position: relative;
+    background: linear-gradient(135deg, #6B5B4A, #3D332B);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 12px;
+  }
+  .ba-half.after { background: linear-gradient(135deg, #DCC393, #A8884F); }
+  .ba-half-tag {
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    background: rgba(30, 22, 18, 0.7);
+    color: var(--cream);
+    padding: 5px 10px;
+    border-radius: 999px;
+  }
+  .ba-divider {
+    position: absolute;
+    inset: 0 auto 0 50%;
+    width: 1px;
+    background: var(--gold);
+    transform: translateX(-0.5px);
+  }
+  .ba-card-body {
+    padding: 1.4rem 1.5rem 1.6rem;
+  }
+  .ba-procedure {
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    color: var(--gold-deep);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+  .ba-name {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--espresso);
+    line-height: 1.2;
+    margin-bottom: 0.3rem;
+  }
+  .ba-name em {
+    font-style: italic;
+    color: var(--gold);
+    font-weight: 400;
+  }
+  .ba-loc {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 0.85rem;
+  }
+  .ba-quote {
+    font-size: 0.88rem;
+    color: var(--muted-dark);
+    line-height: 1.55;
+    font-style: italic;
+  }
+
+  /* Real photo card variant */
+  .ba-card-real {
+    border: 1px solid var(--gold);
+    box-shadow: 0 8px 24px rgba(201, 169, 110, 0.18);
+  }
+  .ba-card-imgwrap-real {
+    display: block;
+    aspect-ratio: 1;
+    background: var(--ink);
+    overflow: hidden;
+    position: relative;
+  }
+  .ba-card-imgwrap-real img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .ba-real-label {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--mono);
+    font-size: 0.58rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    background: rgba(30, 22, 18, 0.78);
+    color: var(--cream);
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-weight: 700;
+    z-index: 2;
+    backdrop-filter: blur(4px);
+  }
+  .ba-real-label-top { top: 14px; }
+  .ba-real-label-bottom { bottom: 14px; }
+  .ba-real-tag {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    font-family: var(--mono);
+    font-size: 0.55rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    background: var(--gold);
+    color: var(--espresso);
+    padding: 4px 10px;
+    border-radius: 3px;
+    font-weight: 700;
+    z-index: 2;
+  }
+
+  .ba-placeholder-note {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1.25rem 1.75rem;
+    background: rgba(201, 169, 110, 0.1);
+    border: 1px dashed var(--gold);
+    border-radius: 6px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ba-placeholder-note .label {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    color: var(--gold-deep);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
+  .ba-placeholder-note p {
+    font-size: 0.88rem;
+    color: var(--muted-dark);
+    font-style: italic;
+  }
+
+  @media (max-width: 900px) {
+    .ba-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 600px) {
+    .ba-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ==================== WORKFLOW ==================== */
+  .workflow {
+    background: var(--cream);
+    position: relative;
+  }
+  .workflow .container { position: relative; z-index: 2; }
+  .workflow-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    margin-top: 1rem;
+    position: relative;
+  }
+  .workflow-grid::before {
+    content: '';
+    position: absolute;
+    top: 32px;
+    left: 12.5%;
+    right: 12.5%;
+    height: 1px;
+    background: var(--gold);
+    z-index: 0;
+  }
+  .workflow-step {
+    text-align: center;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 1;
+  }
+  .workflow-num {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 2px solid var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.6rem;
+    color: var(--gold);
+    font-weight: 500;
+    box-shadow: var(--shadow-md);
+  }
+  .workflow-step h4 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 1.35rem;
+    color: var(--espresso);
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+  .workflow-step p {
+    font-size: 0.88rem;
+    color: var(--muted-dark);
+    line-height: 1.55;
+  }
+  @media (max-width: 800px) {
+    .workflow-grid { grid-template-columns: 1fr 1fr; gap: 3rem 1rem; }
+    .workflow-grid::before { display: none; }
+  }
+  @media (max-width: 500px) {
+    .workflow-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ==================== SURGEON TEAM ==================== */
+  .team-section {
+    background: var(--white);
+  }
+  .team-feature {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .team-photo-large {
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgba(201, 169, 110, 0.25);
+    border-bottom: 4px solid var(--gold);
+    box-shadow: var(--shadow-md);
+    background: var(--cream);
+  }
+  .team-photo-large img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .team-roster {
+    padding: 0.5rem 0;
+  }
+  .team-roster-label {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(201, 169, 110, 0.25);
+  }
+  .team-roster-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .team-roster-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid rgba(201, 169, 110, 0.18);
+  }
+  .team-roster-list li:last-child {
+    border-bottom: none;
+  }
+  .team-roster-name {
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    color: var(--espresso);
+    font-weight: 500;
+  }
+  .team-roster-cred {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.14em;
+    color: var(--gold-deep);
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .team-roster-cta {
+    margin-top: 1.75rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--gold);
+  }
+  .team-roster-quote {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    color: var(--muted-dark);
+    line-height: 1.55;
+    font-style: italic;
+  }
+  .team-roster-quote strong {
+    color: var(--espresso);
+    font-weight: 500;
+    font-style: normal;
+  }
+  @media (max-width: 900px) {
+    .team-feature { grid-template-columns: 1fr; gap: 2.5rem; }
+  }
+
+  /* ==================== LEAD FORM ==================== */
+  .lead-form-section {
+    background: var(--espresso);
+    color: var(--cream);
+    padding: 100px 0;
+  }
+  .lead-form-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+  .lead-form-section .section-eyebrow { color: var(--gold); }
+  .lead-form-section .section-eyebrow::before, .lead-form-section .section-eyebrow::after {
+    background: var(--gold);
+  }
+  .lead-form-section h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(1.9rem, 3.8vw, 2.85rem);
+    line-height: 1.1;
+    color: var(--cream);
+    margin-bottom: 1.25rem;
+  }
+  .lead-form-section h2 em {
+    color: var(--gold);
+    font-style: italic;
+  }
+  .lead-form-section .lede {
+    color: var(--cream-deep);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+  .lead-form-perks {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(201, 169, 110, 0.25);
+  }
+  .lead-form-perk {
+    display: flex;
+    gap: 0.85rem;
+    align-items: flex-start;
+    margin-bottom: 0.85rem;
+    font-size: 0.92rem;
+    color: var(--cream-deep);
+  }
+  .lead-form-perk-bullet {
+    color: var(--gold);
+    flex-shrink: 0;
+    font-size: 0.7rem;
+    margin-top: 0.45rem;
+  }
+
+  .lead-form-card {
+    background: var(--cream);
+    color: var(--ink);
+    padding: 2.75rem 2.5rem;
+    border-radius: 6px;
+    box-shadow: var(--shadow-xl);
+    border: 1px solid rgba(201, 169, 110, 0.3);
+  }
+  .lead-form-card h3 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--espresso);
+    margin-bottom: 0.4rem;
+  }
+  .lead-form-card .formhead {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    color: var(--gold-deep);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  .lead-form-card .form-sub {
+    font-size: 0.88rem;
+    color: var(--muted-dark);
+    margin-bottom: 1.5rem;
+  }
+  .form-row {
+    margin-bottom: 1rem;
+  }
+  .form-row label {
+    display: block;
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--espresso);
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+  }
+  .form-row input,
+  .form-row select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid rgba(201, 169, 110, 0.4);
+    background: var(--white);
+    border-radius: 3px;
+    font-family: var(--body);
+    font-size: 0.95rem;
+    color: var(--ink);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .form-row input:focus,
+  .form-row select:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(201, 169, 110, 0.15);
+  }
+  .form-row-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+  .form-submit {
+    width: 100%;
+    padding: 16px;
+    background: var(--espresso);
+    color: var(--cream);
+    border: none;
+    border-radius: 999px;
+    font-family: var(--body);
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 0.85rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  .form-submit:hover {
+    background: var(--gold);
+    color: var(--espresso);
+    transform: translateY(-1px);
+  }
+  .form-disclaimer {
+    font-size: 0.7rem;
+    color: var(--muted);
+    text-align: center;
+    margin-top: 1rem;
+    line-height: 1.5;
+  }
+  @media (max-width: 800px) {
+    .lead-form-inner { grid-template-columns: 1fr; }
+  }
+
+  /* ==================== WHY US ==================== */
+  .why-us {
+    background: var(--white);
+  }
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+  .why-card {
+    text-align: left;
+    padding: 0;
+  }
+  .why-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--cream);
+    border: 1px solid var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--gold-deep);
+    font-weight: 500;
+  }
+  .why-card h4 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--espresso);
+    line-height: 1.25;
+    margin-bottom: 0.85rem;
+  }
+  .why-card h4 em {
+    color: var(--gold);
+    font-style: italic;
+  }
+  .why-card p {
+    font-size: 0.95rem;
+    color: var(--muted-dark);
+    line-height: 1.7;
+  }
+  @media (max-width: 800px) {
+    .why-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  }
+
+  /* ==================== LOCATIONS ==================== */
+  .locations {
+    background: var(--cream);
+  }
+  .locations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  .location-card {
+    background: var(--white);
+    border-radius: 4px;
+    padding: 2rem 1.75rem;
+    border: 1px solid rgba(201, 169, 110, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .location-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--gold);
+  }
+  .location-tag {
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    color: var(--gold-deep);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+  }
+  .location-name {
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--espresso);
+    margin-bottom: 0.6rem;
+  }
+  .location-addr {
+    font-size: 0.8rem;
+    color: var(--muted-dark);
+    line-height: 1.5;
+    font-family: var(--body);
+  }
+  @media (max-width: 900px) {
+    .locations-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 500px) {
+    .locations-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ==================== FAQ ==================== */
+  .faq-section {
+    background: var(--white);
+  }
+  .faq-list {
+    max-width: 880px;
+    margin: 0 auto;
+  }
+  .faq-item {
+    border-bottom: 1px solid rgba(201, 169, 110, 0.25);
+    padding: 1.6rem 0;
+  }
+  .faq-q {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    color: var(--espresso);
+    font-weight: 500;
+    padding: 0;
+    line-height: 1.3;
+  }
+  .faq-q:hover { color: var(--gold-deep); }
+  .faq-toggle {
+    flex-shrink: 0;
+    margin-left: 1rem;
+    color: var(--gold);
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+    font-family: var(--body);
+    font-weight: 300;
+  }
+  .faq-item.open .faq-toggle {
+    transform: rotate(45deg);
+  }
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding-top 0.3s ease;
+  }
+  .faq-item.open .faq-a {
+    max-height: 600px;
+    padding-top: 1rem;
+  }
+  .faq-a p {
+    color: var(--muted-dark);
+    line-height: 1.7;
+    font-size: 0.96rem;
+  }
+
+  /* ==================== FINAL CTA ==================== */
+  .final-cta {
+    background: var(--espresso);
+    color: var(--cream);
+    text-align: center;
+  }
+  .final-cta h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(2rem, 4.6vw, 3.4rem);
+    color: var(--cream);
+    margin-bottom: 1.5rem;
+    line-height: 1.15;
+  }
+  .final-cta h2 em {
+    color: var(--gold);
+    font-style: italic;
+  }
+  .final-cta p {
+    color: var(--cream-deep);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 620px;
+    margin: 0 auto 2.5rem;
+  }
+  .final-cta-row {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* ==================== FOOTER ==================== */
+  .site-footer {
+    background: var(--ink);
+    color: var(--cream-deep);
+    padding: 60px 0 30px;
+  }
+  .footer-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+  .footer-brand .footer-mark {
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    color: var(--cream);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  .footer-brand .footer-iw {
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--gold);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .footer-brand p {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.6;
+    max-width: 380px;
+  }
+  .footer-col h5 {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .footer-col a {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--cream-deep);
+    margin-bottom: 0.5rem;
+    transition: color 0.2s ease;
+  }
+  .footer-col a:hover { color: var(--gold); }
+  .footer-bottom {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(201, 169, 110, 0.15);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .footer-bottom p {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+  }
+  @media (max-width: 800px) {
+    .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+  }
+
+  /* ==================== ANIMATIONS ==================== */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .reveal { opacity: 0; }
+  .reveal.is-visible { animation: fadeUp 0.8s ease-out forwards; }
+</style>
+</head>
+<body>
+
+<!-- DEMO BANNER -->
+<div class="demo-banner">
+  <em>Demo</em> · WMOS × IW Pilot Concept · For May 5 Strategic Meeting · <em>Not Live</em>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand-lockup">
+      <div class="brand-mark">
+        <span class="primary">West Michigan Oral Surgery</span>
+        <span class="secondary">FULL-ARCH IMPLANT CENTER</span>
+      </div>
+      <div class="brand-divider"></div>
+      <div class="iw-mark">IW</div>
+    </div>
+    <div class="header-cta-wrap">
+      <span class="header-phone">(XXX) XXX-XXXX</span>
+      <a href="#consult" class="header-cta">Book Consult</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="">
+    <source src="https://raw.githubusercontent.com/skylar-ship-it/Wmos-landing-page-demo/main/WMOSBROLL2.mp4" type="video/mp4">
+  </video>
+  <div class="hero-video-overlay"></div>
+  <div class="hero-inner">
+    <div>
+      <span class="hero-eyebrow">Full-Arch Specialists · Board-Certified Surgeons</span>
+      <h1 class="hero-title">Your smile,<br><em>restored</em> in a day.</h1>
+      <p class="hero-lede">All-on-X full-arch dental implants performed by board-certified oral and maxillofacial surgeons across West Michigan. Premium clinical workflow. Same-day fixed teeth. Recovery support that doesn't end when you leave the chair.</p>
+
+      <div class="hero-cta-row">
+        <a href="#consult" class="btn-primary">Book Free Consult</a>
+        <a href="#workflow" class="btn-secondary">See How It Works</a>
+      </div>
+
+      <div class="hero-trust">
+        <div class="hero-trust-item"><span class="dot"></span>7 Board-Certified Surgeons</div>
+        <div class="hero-trust-item"><span class="dot"></span>4 West Michigan Locations</div>
+        <div class="hero-trust-item"><span class="dot"></span>Same-Day Teeth</div>
+      </div>
+    </div>
+
+    <div class="hero-ba">
+      <img src="https://raw.githubusercontent.com/skylar-ship-it/Wmos-landing-page-demo/main/beforeafter.jpg"
+           alt="Before and after full-arch dental implant transformation"
+           class="hero-ba-photo"
+           loading="eager">
+      <span class="hero-ba-label hero-ba-label-top">Before</span>
+      <span class="hero-ba-label hero-ba-label-bottom">After</span>
+      <div class="hero-ba-caption">
+        <div class="hero-ba-caption-name"><em>Real patient transformation</em></div>
+        <div class="hero-ba-caption-loc">Full-Arch · WMOS</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAND -->
+<section class="trust-band" style="padding: 50px 0;">
+  <div class="trust-band-inner">
+    <div class="trust-stat">
+      <div class="trust-stat-num">7</div>
+      <div class="trust-stat-label">Board-Certified Surgeons</div>
+      <div class="trust-stat-sub">All American Board OMFS</div>
+    </div>
+    <div class="trust-stat">
+      <div class="trust-stat-num">4</div>
+      <div class="trust-stat-label">Locations</div>
+      <div class="trust-stat-sub">Across West Michigan</div>
+    </div>
+    <div class="trust-stat">
+      <div class="trust-stat-num">35+</div>
+      <div class="trust-stat-label">Years Combined</div>
+      <div class="trust-stat-sub">Surgical experience</div>
+    </div>
+    <div class="trust-stat">
+      <div class="trust-stat-num">5★</div>
+      <div class="trust-stat-label">Patient-Reviewed</div>
+      <div class="trust-stat-sub">Aggregate rating</div>
+    </div>
+  </div>
+</section>
+
+<!-- I WILL PROMISE -->
+<section class="promise">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">The Promise</span>
+      <h2 class="section-title">A new way to <em>say yes</em> to yourself.</h2>
+      <p class="section-lede">Full-arch implants are not just a procedure. They are a decision to live differently. Six promises every patient makes to themselves — and we hold ourselves to.</p>
+    </div>
+
+    <div class="promise-grid">
+      <div class="promise-card">
+        <div class="promise-tag">IW · 01</div>
+        <p class="promise-text">I Will transform my smile.</p>
+      </div>
+      <div class="promise-card">
+        <div class="promise-tag">IW · 02</div>
+        <p class="promise-text">I Will reclaim my confidence.</p>
+      </div>
+      <div class="promise-card">
+        <div class="promise-tag">IW · 03</div>
+        <p class="promise-text">I Will eat what I love again.</p>
+      </div>
+      <div class="promise-card">
+        <div class="promise-tag">IW · 04</div>
+        <p class="promise-text">I Will stop hiding my smile.</p>
+      </div>
+      <div class="promise-card">
+        <div class="promise-tag">IW · 05</div>
+        <p class="promise-text">I Will invest in myself.</p>
+      </div>
+      <div class="promise-card">
+        <div class="promise-tag">IW · 06</div>
+        <p class="promise-text">I Will walk in with fear and out with a smile.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER GALLERY -->
+<section class="ba-gallery" id="results">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Real West Michigan Patients</span>
+      <h2 class="section-title">The faces of <em>full-arch.</em></h2>
+      <p class="section-lede">Each transformation is a real patient. Real recovery. Real life back. Names changed for privacy where requested. Procedures performed by our board-certified surgeons across all four locations.</p>
+    </div>
+
+    <div class="ba-grid">
+      <!-- Card 1 — Real Photo -->
+      <article class="ba-card ba-card-real">
+        <div class="ba-card-imgwrap ba-card-imgwrap-real">
+          <img src="https://raw.githubusercontent.com/skylar-ship-it/Wmos-landing-page-demo/main/beforeafter.jpg"
+               alt="Real WMOS patient before and after full-arch transformation"
+               loading="lazy">
+          <span class="ba-real-label ba-real-label-top">Before</span>
+          <span class="ba-real-label ba-real-label-bottom">After</span>
+          <span class="ba-real-tag">Real Patient</span>
+        </div>
+        <div class="ba-card-body">
+          <p class="ba-procedure">Full-Arch Transformation</p>
+          <h3 class="ba-name"><em>Real WMOS Patient</em></h3>
+          <p class="ba-loc">West Michigan</p>
+          <p class="ba-quote">"I waited fifteen years to fix this. I should have come in fifteen years ago."</p>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="ba-card">
+        <div class="ba-card-imgwrap">
+          <div class="ba-half before"><span class="ba-half-tag">Before</span></div>
+          <div class="ba-half after"><span class="ba-half-tag">After</span></div>
+          <div class="ba-divider"></div>
+        </div>
+        <div class="ba-card-body">
+          <p class="ba-procedure">All-on-X · Both Arches</p>
+          <h3 class="ba-name"><em>Patient Name</em></h3>
+          <p class="ba-loc">North Holland · 1 yr post-op</p>
+          <p class="ba-quote">"My wife says I smile in photos for the first time in twenty years."</p>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="ba-card">
+        <div class="ba-card-imgwrap">
+          <div class="ba-half before"><span class="ba-half-tag">Before</span></div>
+          <div class="ba-half after"><span class="ba-half-tag">After</span></div>
+          <div class="ba-divider"></div>
+        </div>
+        <div class="ba-card-body">
+          <p class="ba-procedure">Same-Day Teeth · Upper</p>
+          <h3 class="ba-name"><em>Patient Name</em></h3>
+          <p class="ba-loc">Grandville · 3 mo post-op</p>
+          <p class="ba-quote">"I drove home with my new teeth the same day. Still can't believe it."</p>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="ba-card">
+        <div class="ba-card-imgwrap">
+          <div class="ba-half before"><span class="ba-half-tag">Before</span></div>
+          <div class="ba-half after"><span class="ba-half-tag">After</span></div>
+          <div class="ba-divider"></div>
+        </div>
+        <div class="ba-card-body">
+          <p class="ba-procedure">Failed Dentures → All-on-4</p>
+          <h3 class="ba-name"><em>Patient Name</em></h3>
+          <p class="ba-loc">South Holland · 8 mo post-op</p>
+          <p class="ba-quote">"Forty years of dentures. One day of surgery. I'd do it again tomorrow."</p>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="ba-card">
+        <div class="ba-card-imgwrap">
+          <div class="ba-half before"><span class="ba-half-tag">Before</span></div>
+          <div class="ba-half after"><span class="ba-half-tag">After</span></div>
+          <div class="ba-divider"></div>
+        </div>
+        <div class="ba-card-body">
+          <p class="ba-procedure">All-on-X · Lower Arch</p>
+          <h3 class="ba-name"><em>Patient Name</em></h3>
+          <p class="ba-loc">Grand Haven · 4 mo post-op</p>
+          <p class="ba-quote">"I can chew an apple again. Such a small thing — but everything."</p>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="ba-card">
+        <div class="ba-card-imgwrap">
+          <div class="ba-half before"><span class="ba-half-tag">Before</span></div>
+          <div class="ba-half after"><span class="ba-half-tag">After</span></div>
+          <div class="ba-divider"></div>
+        </div>
+        <div class="ba-card-body">
+          <p class="ba-procedure">Full-Mouth Reconstruction</p>
+          <h3 class="ba-name"><em>Patient Name</em></h3>
+          <p class="ba-loc">Grandville · 1 yr post-op</p>
+          <p class="ba-quote">"Best decision I've made in a decade. My only regret is waiting."</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="ba-placeholder-note">
+      <span class="label">◇ Demo · Photo placeholders</span>
+      <p>In production, each card holds a real WMOS patient before/after with full-quality clinical photography. We'd source 12–20 cases for the initial gallery, with rotating featured stories.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WORKFLOW -->
+<section class="workflow" id="workflow">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">The All on Everyday Protocol</span>
+      <h2 class="section-title">Surgery in the morning. <em>New teeth</em> by the afternoon.</h2>
+      <p class="section-lede">Our clinical workflow combines photogrammetry, intraoral scanning, and same-day 3D-printed temporary teeth — delivered the same day as surgery, refined during your healing phase, then finalized with permanent restorations.</p>
+    </div>
+
+    <div class="workflow-grid">
+      <div class="workflow-step">
+        <div class="workflow-num">1</div>
+        <h4>Consult &amp; Plan</h4>
+        <p>3D imaging. Treatment plan. Honest conversation about what's possible and what isn't.</p>
+      </div>
+      <div class="workflow-step">
+        <div class="workflow-num">2</div>
+        <h4>Surgical Day</h4>
+        <p>Implants placed using guided surgery. Photogrammetry capture. Anesthesia handled by our team.</p>
+      </div>
+      <div class="workflow-step">
+        <div class="workflow-num">3</div>
+        <h4>Same-Day Teeth</h4>
+        <p>Custom temporary teeth designed digitally and 3D-printed in-office. You walk out smiling.</p>
+      </div>
+      <div class="workflow-step">
+        <div class="workflow-num">4</div>
+        <h4>Final Restoration</h4>
+        <p>Permanent zirconia restoration delivered after healing. Stain &amp; glaze finish for natural look.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team-section" id="team">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Meet Our Surgeons</span>
+      <h2 class="section-title">Eight surgeons. <em>One standard.</em></h2>
+      <p class="section-lede">Every full-arch case at WMOS is performed by an oral and maxillofacial surgeon certified by the American Board of Oral and Maxillofacial Surgery. Hospital-trained. Board-certified in anesthesia. Rooted in this community.</p>
+    </div>
+
+    <div class="team-feature">
+      <div class="team-photo-large">
+        <img src="https://raw.githubusercontent.com/skylar-ship-it/Wmos-landing-page-demo/main/doctors.webp"
+             alt="The board-certified oral and maxillofacial surgeons of West Michigan Oral Surgery"
+             loading="lazy">
+      </div>
+      <div class="team-roster">
+        <div class="team-roster-label">The Team</div>
+        <ul class="team-roster-list">
+          <li><span class="team-roster-name">Dr. DeYoung</span><span class="team-roster-cred">DDS, MD</span></li>
+          <li><span class="team-roster-name">Dr. Grinzinger</span><span class="team-roster-cred">DDS, MD</span></li>
+          <li><span class="team-roster-name">Dr. Houle</span><span class="team-roster-cred">DDS, MD</span></li>
+          <li><span class="team-roster-name">Dr. Huizinga</span><span class="team-roster-cred">DDS, MD</span></li>
+          <li><span class="team-roster-name">Dr. Kirby</span><span class="team-roster-cred">DDS, MD</span></li>
+          <li><span class="team-roster-name">Dr. Klooster</span><span class="team-roster-cred">DDS, MD</span></li>
+          <li><span class="team-roster-name">Dr. Lonergan</span><span class="team-roster-cred">DDS, MD</span></li>
+          <li><span class="team-roster-name">Dr. Nalley</span><span class="team-roster-cred">DDS, MD</span></li>
+        </ul>
+        <div class="team-roster-cta">
+          <p class="team-roster-quote">All board-certified by the <strong>American Board of Oral &amp; Maxillofacial Surgery.</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEAD FORM -->
+<section class="lead-form-section" id="consult">
+  <div class="lead-form-inner">
+    <div>
+      <span class="section-eyebrow">Free Candidacy Consultation</span>
+      <h2>See if you're the right <em>candidate.</em></h2>
+      <p class="lede">Most patients are candidates for full-arch implants — even those who've been told otherwise elsewhere. The only way to know is a real consultation with a real surgeon. The first one is on us.</p>
+
+      <div class="lead-form-perks">
+        <div class="lead-form-perk">
+          <span class="lead-form-perk-bullet">◆</span>
+          <span>30-minute consultation with a board-certified oral surgeon</span>
+        </div>
+        <div class="lead-form-perk">
+          <span class="lead-form-perk-bullet">◆</span>
+          <span>3D imaging and treatment plan review</span>
+        </div>
+        <div class="lead-form-perk">
+          <span class="lead-form-perk-bullet">◆</span>
+          <span>Transparent pricing — no surprises</span>
+        </div>
+        <div class="lead-form-perk">
+          <span class="lead-form-perk-bullet">◆</span>
+          <span>Financing options available · CareCredit accepted</span>
+        </div>
+      </div>
+    </div>
+
+    <form class="lead-form-card" onsubmit="event.preventDefault(); alert('Demo form — not connected to live submission. In production this would route to GHL.');">
+      <div class="formhead">Step 01 of 02</div>
+      <h3>Tell us about yourself.</h3>
+      <p class="form-sub">Two minutes. We'll be in touch within one business day.</p>
+
+      <div class="form-row form-row-pair">
+        <div>
+          <label for="first">First Name</label>
+          <input type="text" id="first" required>
+        </div>
+        <div>
+          <label for="last">Last Name</label>
+          <input type="text" id="last" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-row">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" required>
+      </div>
+      <div class="form-row">
+        <label for="loc">Preferred Location</label>
+        <select id="loc" required>
+          <option value="">Select location…</option>
+          <option>Grand Haven</option>
+          <option>Grandville</option>
+          <option>North Holland</option>
+          <option>South Holland</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="situation">Current Situation</label>
+        <select id="situation" required>
+          <option value="">Select…</option>
+          <option>Wearing dentures, want something better</option>
+          <option>Missing several teeth, considering options</option>
+          <option>Failing teeth, looking for a permanent solution</option>
+          <option>Just researching</option>
+        </select>
+      </div>
+      <button type="submit" class="form-submit">Continue to Step 02 →</button>
+      <p class="form-disclaimer">Your information is private. We will never sell or share. By submitting you consent to be contacted by WMOS regarding your inquiry.</p>
+    </form>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-us">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Why WMOS × IW</span>
+      <h2 class="section-title">Three reasons this is <em>different.</em></h2>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">01</div>
+        <h4>Surgeon-led, <em>not corporate.</em></h4>
+        <p>Every full-arch case at WMOS is performed by a board-certified oral and maxillofacial surgeon. Not a general dentist who took a weekend course. Not a rotating roster of out-of-state visitors. Your surgeon, on day one and at every follow-up.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">02</div>
+        <h4>Premium clinical <em>workflow.</em></h4>
+        <p>Photogrammetry. Intraoral scanning. 3D-printed temporary teeth. Stain-and-glaze finishing. We invested in the technology that produces predictable, beautiful, lasting results — because the patient deserves the precision.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">03</div>
+        <h4>Rooted in <em>this community.</em></h4>
+        <p>Four locations across West Michigan. Surgeons who live here, raise families here, and care about the patients they pass at the grocery store. This is not a chain. This is a relationship.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATIONS -->
+<section class="locations">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Four West Michigan Locations</span>
+      <h2 class="section-title">Care close to <em>where you live.</em></h2>
+    </div>
+
+    <div class="locations-grid">
+      <div class="location-card">
+        <div class="location-tag">Location 01</div>
+        <div class="location-name">Grand Haven</div>
+        <div class="location-addr">919 South Beechtree, Suite 8<br>Grand Haven, MI<br><strong>(616) 844-5135</strong></div>
+      </div>
+      <div class="location-card">
+        <div class="location-tag">Location 02</div>
+        <div class="location-name">Grandville</div>
+        <div class="location-addr">4330 44th St SW<br>Grandville, MI<br><strong>(616) 530-4710</strong></div>
+      </div>
+      <div class="location-card">
+        <div class="location-tag">Location 03</div>
+        <div class="location-name">North Holland</div>
+        <div class="location-addr">12350 Riley St<br>Holland, MI<br><strong>(616) 738-9900</strong></div>
+      </div>
+      <div class="location-card">
+        <div class="location-tag">Location 04</div>
+        <div class="location-name">South Holland</div>
+        <div class="location-addr">601 Michigan Ave, Suite 200<br>Holland, MI<br><strong>(616) 392-2329</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Frequently Asked</span>
+      <h2 class="section-title">The <em>real</em> answers.</h2>
+      <p class="section-lede">No hedging, no marketing speak. The questions every patient asks and what we tell them.</p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q">
+          What does All-on-X actually cost?
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Single arch full-arch reconstruction at WMOS typically ranges from $25,000 to $35,000 depending on bone grafting needs, anesthesia, and the final restoration material chosen. Both arches range from $50,000 to $65,000. We offer transparent pricing during your consultation, with financing through CareCredit and other partners. We do not believe in surprise billing.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          Am I a candidate if other dentists said no?
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Often, yes. As board-certified oral and maxillofacial surgeons, we routinely treat patients who were told they had insufficient bone, were too old, or had health conditions that disqualified them elsewhere. With modern bone grafting, zygomatic implants, and IV sedation protocols, very few patients are truly not candidates. The only way to know is a real consultation with imaging.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          How long is recovery?
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Most patients return to work within 3 to 5 days. Soft food diet for the first 8 to 12 weeks while implants integrate with bone. You leave the day of surgery with functional temporary teeth — no period of being toothless. Final permanent restoration is typically delivered around month 4 to 6 post-surgery.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          How is this different from traditional dentures?
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Dentures sit on top of your gums and require adhesive. Full-arch implants are fixed permanently to titanium implants placed in your jawbone. They do not slip, click, or come out. They feel and function like natural teeth. Bone density is preserved because the implants stimulate the jaw the way natural roots do. Most patients describe the difference as transformative — and irreversible in the best way.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          Why WMOS instead of a chain implant center?
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Three things. First, every surgery is performed by a board-certified oral and maxillofacial surgeon — not a general dentist. Second, we are local. Your surgeon will see you for follow-ups, not a rotating roster. Third, we do not pressure-sell. We will tell you honestly whether this is the right time and the right procedure for you, even if the answer is "wait" or "do something less invasive first."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <h2>Ready when <em>you</em> are.</h2>
+    <p>Free consultation. No pressure. Just a real conversation with a real surgeon about whether full-arch is right for you. Whenever you're ready — even if that's a year from now — we'll be here.</p>
+    <div class="final-cta-row">
+      <a href="#consult" class="btn-primary">Book Free Consult</a>
+      <a href="tel:" class="btn-secondary">Call (XXX) XXX-XXXX</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-mark">West Michigan Oral &amp; Maxillofacial Surgery</div>
+      <div class="footer-iw">Powered by Implanted Wisdom</div>
+      <p>Board-certified oral and maxillofacial surgeons specializing in full-arch dental implants across West Michigan. Grand Haven · Grandville · North Holland · South Holland.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Care</h5>
+      <a href="#">Full-Arch Implants</a>
+      <a href="#">All-on-4 / All-on-X</a>
+      <a href="#">Same-Day Teeth</a>
+      <a href="#">Bone Grafting</a>
+    </div>
+    <div class="footer-col">
+      <h5>About</h5>
+      <a href="#">Our Surgeons</a>
+      <a href="#">Locations</a>
+      <a href="#">Patient Stories</a>
+      <a href="#">Privacy</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 West Michigan Oral &amp; Maxillofacial Surgery</p>
+    <p>WMOS × IW · Pilot Demo · Not Live</p>
+  </div>
+</footer>
+
+<script>
+  // FAQ toggle
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.parentElement.classList.toggle('open');
+    });
+  });
+
+  // Reveal on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    reveals.forEach(r => io.observe(r));
+  }
+</script>
+
+</body>
+</html>
