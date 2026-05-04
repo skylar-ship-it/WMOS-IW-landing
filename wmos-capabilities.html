@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="What WMOS × Implanted Wisdom brings on day one. Patient acquisition funnel, communication & nurture, operations & reporting — built, tested, ready to deploy.">
+<title>Capabilities | WMOS × Implanted Wisdom</title>
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wmos-landing-page-demo.vercel.app/capabilities">
+<meta property="og:title" content="What we bring on day one | WMOS × Implanted Wisdom">
+<meta property="og:description" content="Built. Tested. Operating. Patient acquisition, communication, and operations — the full stack.">
+<meta property="og:image" content="https://raw.githubusercontent.com/skylar-ship-it/Wmos-landing-page-demo/main/thumbnail.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #1E1612;
+    --espresso: #2D241F;
+    --gold: #C9A96E;
+    --gold-deep: #A8884F;
+    --gold-light: #DCC393;
+    --teal: #245C5C;
+    --cream: #F7F2EC;
+    --cream-deep: #EDE5D7;
+    --white: #FFFFFF;
+    --muted: #8B7E73;
+    --muted-dark: #5F5651;
+
+    --serif: 'Cormorant Garamond', serif;
+    --body: 'Jost', sans-serif;
+    --mono: 'Courier Prime', monospace;
+
+    --shadow-md: 0 8px 24px rgba(30, 22, 18, 0.10);
+    --shadow-lg: 0 20px 48px rgba(30, 22, 18, 0.14);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--body);
+    font-weight: 300;
+    color: var(--ink);
+    background: var(--white);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  /* HEADER (matches landing pages) */
+  .site-header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(201, 169, 110, 0.18);
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .header-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .brand-lockup {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .brand-mark { display: flex; flex-direction: column; line-height: 1.1; }
+  .brand-mark .primary {
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    color: var(--espresso);
+    font-weight: 500;
+  }
+  .brand-mark .secondary {
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.18em;
+    color: var(--gold-deep);
+    margin-top: 2px;
+    font-weight: 700;
+  }
+  .brand-divider {
+    width: 1px;
+    height: 32px;
+    background: var(--gold);
+    opacity: 0.5;
+  }
+  .iw-mark {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.5rem;
+    color: var(--gold);
+    font-weight: 500;
+  }
+  .header-back {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--espresso);
+    font-weight: 700;
+    transition: color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .header-back:hover { color: var(--gold-deep); }
+  @media (max-width: 600px) {
+    .brand-mark .secondary { display: none; }
+  }
+
+  /* HERO */
+  .hero {
+    background: var(--espresso);
+    color: var(--cream);
+    padding: 90px 0 100px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -10%; right: -10%;
+    width: 60%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(201, 169, 110, 0.06) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .hero-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 32px;
+    position: relative;
+  }
+  .hero-eyebrow {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    width: 32px;
+    height: 1px;
+    background: var(--gold);
+  }
+  .hero-title {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(2.4rem, 5.4vw, 4.4rem);
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+    margin-bottom: 1.4rem;
+    color: var(--cream);
+  }
+  .hero-title em {
+    color: var(--gold);
+    font-style: italic;
+  }
+  .hero-sub {
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  .hero-lede {
+    font-size: 1.05rem;
+    color: var(--cream-deep);
+    line-height: 1.75;
+    max-width: 620px;
+    font-style: italic;
+  }
+
+  /* PILLARS */
+  .pillars {
+    padding: 100px 0;
+    background: var(--white);
+  }
+  .container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+  .pillar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .pillar {
+    background: var(--cream);
+    border: 1px solid rgba(201, 169, 110, 0.25);
+    border-top: 3px solid var(--gold);
+    border-radius: 6px;
+    padding: 2rem 1.75rem 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .pillar:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+  }
+  .pillar-num {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    color: var(--gold-deep);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+  .pillar-title {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.65rem;
+    color: var(--gold);
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+  }
+  .pillar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .pillar li {
+    padding: 0.7rem 0;
+    border-bottom: 1px solid rgba(201, 169, 110, 0.15);
+    display: flex;
+    gap: 0.6rem;
+    align-items: flex-start;
+  }
+  .pillar li:last-child { border-bottom: none; }
+  .pillar li::before {
+    content: '◆';
+    color: var(--gold);
+    flex-shrink: 0;
+    font-size: 0.65rem;
+    margin-top: 0.4rem;
+  }
+  .pillar li strong {
+    font-family: var(--body);
+    font-weight: 600;
+    color: var(--espresso);
+    font-size: 0.92rem;
+    display: block;
+    margin-bottom: 0.15rem;
+  }
+  .pillar li span {
+    font-family: var(--body);
+    font-weight: 300;
+    color: var(--muted-dark);
+    font-size: 0.86rem;
+    line-height: 1.55;
+  }
+  .pillar-li-text {
+    flex: 1;
+  }
+  @media (max-width: 900px) {
+    .pillar-grid { grid-template-columns: 1fr; }
+  }
+
+  /* THE STACK */
+  .stack-section {
+    background: var(--cream);
+    padding: 80px 0;
+  }
+  .stack-eyebrow {
+    text-align: center;
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.24em;
+    color: var(--gold-deep);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
+  .stack-title {
+    text-align: center;
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: var(--espresso);
+    margin-bottom: 3rem;
+  }
+  .stack-title em {
+    color: var(--gold);
+    font-style: italic;
+  }
+  .stack-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .stack-card {
+    background: var(--white);
+    border: 1px solid rgba(201, 169, 110, 0.25);
+    border-radius: 6px;
+    padding: 1.75rem 1.75rem 1.5rem;
+  }
+  .stack-card-title {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    color: var(--gold-deep);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    padding-bottom: 0.85rem;
+    border-bottom: 1px solid rgba(201, 169, 110, 0.25);
+  }
+  .stack-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .stack-card li {
+    padding: 0.4rem 0;
+    font-size: 0.88rem;
+    color: var(--espresso);
+    font-weight: 400;
+  }
+  @media (max-width: 700px) {
+    .stack-grid { grid-template-columns: 1fr; }
+  }
+
+  /* WHO BUILDS */
+  .who {
+    background: var(--espresso);
+    color: var(--cream);
+    padding: 90px 0;
+  }
+  .who-inner {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+  .who-eyebrow {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .who-eyebrow::before {
+    content: '';
+    width: 32px;
+    height: 1px;
+    background: var(--gold);
+  }
+  .who-title {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: var(--cream);
+    line-height: 1.15;
+    margin-bottom: 2.5rem;
+  }
+  .who-title em {
+    color: var(--gold);
+    font-style: italic;
+  }
+  .who-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .who-list li {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid rgba(201, 169, 110, 0.2);
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 1.5rem;
+    align-items: baseline;
+  }
+  .who-list li:last-child { border-bottom: none; }
+  .who-role {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.16em;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .who-detail {
+    font-family: var(--body);
+    font-size: 0.95rem;
+    color: var(--cream-deep);
+    line-height: 1.65;
+  }
+  .who-detail strong {
+    color: var(--cream);
+    font-weight: 500;
+  }
+  @media (max-width: 700px) {
+    .who-list li { grid-template-columns: 1fr; gap: 0.5rem; }
+  }
+
+  /* CTA back to landing */
+  .cta-back {
+    text-align: center;
+    padding: 80px 0;
+    background: var(--white);
+  }
+  .cta-back h3 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--espresso);
+    margin-bottom: 1rem;
+  }
+  .cta-back h3 em {
+    color: var(--gold);
+    font-style: italic;
+  }
+  .cta-back p {
+    font-size: 0.95rem;
+    color: var(--muted-dark);
+    margin-bottom: 2rem;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cta-back-btn {
+    display: inline-block;
+    background: var(--espresso);
+    color: var(--cream);
+    padding: 14px 32px;
+    border-radius: 999px;
+    font-family: var(--body);
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border: 1px solid var(--espresso);
+  }
+  .cta-back-btn:hover {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--espresso);
+  }
+
+  /* FOOTER */
+  .site-footer {
+    background: var(--ink);
+    color: var(--cream-deep);
+    padding: 32px 0;
+    text-align: center;
+  }
+  .site-footer p {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand-lockup">
+      <div class="brand-mark">
+        <span class="primary">West Michigan Oral Surgery</span>
+        <span class="secondary">FULL-ARCH RECONSTRUCTION CENTER</span>
+      </div>
+      <div class="brand-divider"></div>
+      <div class="iw-mark">IW</div>
+    </div>
+    <a href="index.html" class="header-back">← Back to Site</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-eyebrow">WMOS × IW · Pilot Capabilities</span>
+    <h1 class="hero-title">What we bring on <em>day one.</em></h1>
+    <p class="hero-sub">Built. Tested. Operating.</p>
+    <p class="hero-lede">Implanted Wisdom is not a marketing agency wrapped around a CRM. It is a fully built, surgeon-led patient-acquisition platform — already in production at Pulver Oral Surgery, ready to deploy at WMOS in 60 days. What we bring is not a roadmap. It is a system.</p>
+  </div>
+</section>
+
+<!-- PILLARS -->
+<section class="pillars">
+  <div class="container">
+    <div class="pillar-grid">
+
+      <article class="pillar">
+        <div class="pillar-num">Pillar · 01</div>
+        <h2 class="pillar-title">Patient acquisition.</h2>
+        <ul>
+          <li>
+            <span class="pillar-li-text">
+              <strong>Custom landing pages</strong>
+              <span>Branded, conversion-optimized, deployed to Vercel.</span>
+            </span>
+          </li>
+          <li>
+            <span class="pillar-li-text">
+              <strong>Two-stage qualification form</strong>
+              <span>Filters time-wasters before the consult call.</span>
+            </span>
+          </li>
+          <li>
+            <span class="pillar-li-text">
+              <strong>Meta + Google Ads infrastructure</strong>
+              <span>Pixel + GTM live. Custom audiences. Lookalikes.</span>
+            </span>
+          </li>
+          <li>
+            <span class="pillar-li-text">
+              <strong>SEO foundation</strong>
+              <span>Schema, OG metadata, geo-targeted structure.</span>
+            </span>
+          </li>
+          <li>
+            <span class="pillar-li-text">
+              <strong>Real-time attribution</strong>
+              <span>Click-to-consult tracking by ad, campaign, keyword.</span>
+            </span>
+          </li>
+        </ul>
+      </article>
+
+      <article class="pillar">
+        <div class="pillar-num">Pillar · 02</div>
+        <h2 class="pillar-title">Communication & nurture.</h2>
+        <ul>
+          <li>
+            <span class="pillar-li-text">
+              <strong>Custom-coded HTML emails</strong>
+              <span>Hand-built, brand-aligned. No drag-and-drop boilerplate.</span>
+            </span>
+          </li>
+          <li>
+            <span class="pillar-li-text">
+              <strong>Welcome &amp; confirmation sequences</strong>
+              <span>Dynamic merge fields. Reduces no-shows.</span>
+            </span>
+          </li>
+          <li>
+            <span class="pillar-li-text">
+              <strong>Post-consult nurture</strong>
+              <span>Three paths: spouse approval, price, financing.</span>
+            </span>
+          </li>
+          <li>
+            <span class="pillar-li-text">
+              <strong>Treatment-decision sequences</strong>
+              <span>Highest-LTV prospects. Plan upload safety net.</span>
+            </span>
+          </li>
+          <li>
+            <span class="pillar-li-text">
+              <strong>SMS + email orchestration</strong>
+              <span>Multi-channel workflows. A2P 10DLC compliant.</span>
+            </span>
+          </li>
+        </ul>
+      </article>
+
+      <article class="pillar">
+        <div class="pillar-num">Pillar · 03</div>
+        <h2 class="pillar-title">Operations & reporting.</h2>
+        <ul>
+          <li>
+            <span class="pillar-li-text">
+              <strong>GHL CRM backbone</strong>
+              <span>Pipeline, custom values, branded review and booking links.</span>
+            </span>
+          </li>
+          <li>
+            <span class="pillar-li-text">
+              <strong>Workflow library</strong>
+              <span>Seven production workflows audited and live.</span>
+            </span>
+          </li>
+          <li>
+            <span class="pillar-li-text">
+              <strong>Toll-free SMS</strong>
+              <span>866-IMPLANT. Number-portable. Verified.</span>
+            </span>
+          </li>
+          <li>
+            <span class="pillar-li-text">
+              <strong>Compliance pages</strong>
+              <span>Privacy, ToS, A2P attestation. Indexed.</span>
+            </span>
+          </li>
+          <li>
+            <span class="pillar-li-text">
+              <strong>Reporting dashboards</strong>
+              <span>Lead source, consult-to-close, ROI by channel.</span>
+            </span>
+          </li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- THE STACK -->
+<section class="stack-section">
+  <div class="container">
+    <div class="stack-eyebrow">The Stack</div>
+    <h2 class="stack-title">The tools <em>we run on.</em></h2>
+    <div class="stack-grid">
+      <div class="stack-card">
+        <div class="stack-card-title">CRM &amp; Automation</div>
+        <ul>
+          <li>GoHighLevel — pipeline, workflows, SMS</li>
+          <li>Custom values &amp; merge fields</li>
+          <li>A2P 10DLC compliant SMS</li>
+          <li>Toll-free + local DID provisioning</li>
+        </ul>
+      </div>
+      <div class="stack-card">
+        <div class="stack-card-title">Web &amp; Ads</div>
+        <ul>
+          <li>Next.js + Vercel — landing pages</li>
+          <li>Meta Pixel + Conversions API</li>
+          <li>Google Tag Manager + GA4</li>
+          <li>Custom HTML email (cross-client tested)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO BUILDS -->
+<section class="who">
+  <div class="who-inner">
+    <span class="who-eyebrow">Who Builds &amp; Supports</span>
+    <h2 class="who-title">The team behind <em>the system.</em></h2>
+    <ul class="who-list">
+      <li>
+        <span class="who-role">Strategy, Brand, Copy</span>
+        <span class="who-detail"><strong>Skylar Pulver</strong> — MS Business Analytics. Full-stack marketing operator. IW co-founder.</span>
+      </li>
+      <li>
+        <span class="who-role">Clinical Oversight</span>
+        <span class="who-detail"><strong>Dr. Eric Pulver</strong> — Board-certified OMFS. CDO at Denti.AI. Author of the All on Everyday protocol.</span>
+      </li>
+      <li>
+        <span class="who-role">Technical Builds</span>
+        <span class="who-detail"><strong>Dedicated GHL specialist + engineering support</strong> — same team, same workflows, applied to WMOS.</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- CTA back -->
+<section class="cta-back">
+  <div class="container">
+    <h3>Want to see <em>what it looks like?</em></h3>
+    <p>The patient-facing landing page is live. See how this all comes together at the front end.</p>
+    <a href="index.html" class="cta-back-btn">View the Landing Page</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p>WMOS × Implanted Wisdom · Pilot Capabilities · Confidential</p>
+</footer>
+
+</body>
+</html>
