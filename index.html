@@ -551,45 +551,56 @@
     border-radius: 6px;
     overflow: hidden;
     border: 1px solid rgba(201, 169, 110, 0.18);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
   }
   .ba-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
+    border-color: var(--gold);
   }
-  .ba-card-imgwrap {
+  .ba-img-pair {
     position: relative;
-    aspect-ratio: 1;
+    aspect-ratio: 2 / 1;
     background: var(--espresso);
     overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .ba-half {
+  .ba-img-half {
     position: relative;
-    background: linear-gradient(135deg, #6B5B4A, #3D332B);
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 12px;
+    overflow: hidden;
+    background: var(--ink);
   }
-  .ba-half.after { background: linear-gradient(135deg, #DCC393, #A8884F); }
-  .ba-half-tag {
+  .ba-img-half img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .ba-img-label {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
     font-family: var(--mono);
-    font-size: 0.6rem;
+    font-size: 0.58rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    background: rgba(30, 22, 18, 0.7);
+    background: rgba(30, 22, 18, 0.78);
     color: var(--cream);
-    padding: 5px 10px;
+    padding: 4px 10px;
     border-radius: 999px;
+    backdrop-filter: blur(4px);
+    font-weight: 700;
+    z-index: 2;
   }
-  .ba-divider {
+  .ba-img-divider {
     position: absolute;
     inset: 0 auto 0 50%;
-    width: 1px;
+    width: 2px;
     background: var(--gold);
-    transform: translateX(-0.5px);
+    transform: translateX(-1px);
+    z-index: 1;
   }
   .ba-card-body {
     padding: 1.4rem 1.5rem 1.6rem;
@@ -628,86 +639,6 @@
     font-size: 0.88rem;
     color: var(--muted-dark);
     line-height: 1.55;
-    font-style: italic;
-  }
-
-  /* Real photo card variant */
-  .ba-card-real {
-    border: 1px solid var(--gold);
-    box-shadow: 0 8px 24px rgba(201, 169, 110, 0.18);
-  }
-  .ba-card-imgwrap-real {
-    display: block;
-    aspect-ratio: 1;
-    background: var(--ink);
-    overflow: hidden;
-    position: relative;
-  }
-  .ba-card-imgwrap-real img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  .ba-real-label {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: var(--mono);
-    font-size: 0.58rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    background: rgba(30, 22, 18, 0.78);
-    color: var(--cream);
-    padding: 5px 12px;
-    border-radius: 999px;
-    font-weight: 700;
-    z-index: 2;
-    backdrop-filter: blur(4px);
-  }
-  .ba-real-label-top { top: 14px; }
-  .ba-real-label-bottom { bottom: 14px; }
-  .ba-real-tag {
-    position: absolute;
-    top: 14px;
-    right: 14px;
-    font-family: var(--mono);
-    font-size: 0.55rem;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    background: var(--gold);
-    color: var(--espresso);
-    padding: 4px 10px;
-    border-radius: 3px;
-    font-weight: 700;
-    z-index: 2;
-  }
-
-  .ba-placeholder-note {
-    text-align: center;
-    margin-top: 3rem;
-    padding: 1.25rem 1.75rem;
-    background: rgba(201, 169, 110, 0.1);
-    border: 1px dashed var(--gold);
-    border-radius: 6px;
-    max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .ba-placeholder-note .label {
-    font-family: var(--mono);
-    font-size: 0.65rem;
-    letter-spacing: 0.18em;
-    color: var(--gold-deep);
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 0.4rem;
-  }
-  .ba-placeholder-note p {
-    font-size: 0.88rem;
-    color: var(--muted-dark);
     font-style: italic;
   }
 
@@ -1431,101 +1362,140 @@
     </div>
 
     <div class="ba-grid">
-      <!-- Card 1 — Real Photo -->
-      <article class="ba-card ba-card-real">
-        <div class="ba-card-imgwrap ba-card-imgwrap-real">
-          <img src="https://raw.githubusercontent.com/skylar-ship-it/Wmos-landing-page-demo/main/beforeafter.jpg"
-               alt="Real WMOS patient before and after full-arch transformation"
-               loading="lazy">
-          <span class="ba-real-label ba-real-label-top">Before</span>
-          <span class="ba-real-label ba-real-label-bottom">After</span>
-          <span class="ba-real-tag">Real Patient</span>
+      <article class="ba-card">
+        <div class="ba-img-pair">
+          <div class="ba-img-half">
+            <img src="https://raw.githubusercontent.com/skylar-ship-it/Wmos-landing-page-demo/main/Mike-Before.webp"
+                 alt="Mike before full-arch transformation" loading="lazy">
+            <span class="ba-img-label">Before</span>
+          </div>
+          <div class="ba-img-half">
+            <img src="https://raw.githubusercontent.com/skylar-ship-it/Wmos-landing-page-demo/main/Mike-After.webp"
+                 alt="Mike after full-arch transformation" loading="lazy">
+            <span class="ba-img-label">After</span>
+          </div>
+          <div class="ba-img-divider"></div>
         </div>
         <div class="ba-card-body">
-          <p class="ba-procedure">Full-Arch Transformation</p>
-          <h3 class="ba-name"><em>Real WMOS Patient</em></h3>
-          <p class="ba-loc">West Michigan</p>
+          <p class="ba-procedure">All-on-4 · Upper Arch</p>
+          <h3 class="ba-name"><em>Mike</em></h3>
+          <p class="ba-loc">Grand Haven · 6 mo post-op</p>
           <p class="ba-quote">"I waited fifteen years to fix this. I should have come in fifteen years ago."</p>
         </div>
       </article>
 
-      <!-- Card 2 -->
       <article class="ba-card">
-        <div class="ba-card-imgwrap">
-          <div class="ba-half before"><span class="ba-half-tag">Before</span></div>
-          <div class="ba-half after"><span class="ba-half-tag">After</span></div>
-          <div class="ba-divider"></div>
+        <div class="ba-img-pair">
+          <div class="ba-img-half">
+            <img src="https://raw.githubusercontent.com/skylar-ship-it/Wmos-landing-page-demo/main/Casey-Before.webp"
+                 alt="Casey before full-arch transformation" loading="lazy">
+            <span class="ba-img-label">Before</span>
+          </div>
+          <div class="ba-img-half">
+            <img src="https://raw.githubusercontent.com/skylar-ship-it/Wmos-landing-page-demo/main/Casey-After.webp"
+                 alt="Casey after full-arch transformation" loading="lazy">
+            <span class="ba-img-label">After</span>
+          </div>
+          <div class="ba-img-divider"></div>
         </div>
         <div class="ba-card-body">
           <p class="ba-procedure">All-on-X · Both Arches</p>
-          <h3 class="ba-name"><em>Patient Name</em></h3>
+          <h3 class="ba-name"><em>Casey</em></h3>
           <p class="ba-loc">North Holland · 1 yr post-op</p>
           <p class="ba-quote">"My wife says I smile in photos for the first time in twenty years."</p>
         </div>
       </article>
 
-      <!-- Card 3 -->
       <article class="ba-card">
-        <div class="ba-card-imgwrap">
-          <div class="ba-half before"><span class="ba-half-tag">Before</span></div>
-          <div class="ba-half after"><span class="ba-half-tag">After</span></div>
-          <div class="ba-divider"></div>
+        <div class="ba-img-pair">
+          <div class="ba-img-half">
+            <img src="https://raw.githubusercontent.com/skylar-ship-it/Wmos-landing-page-demo/main/Nick-Before.webp"
+                 alt="Nick before full-arch transformation" loading="lazy">
+            <span class="ba-img-label">Before</span>
+          </div>
+          <div class="ba-img-half">
+            <img src="https://raw.githubusercontent.com/skylar-ship-it/Wmos-landing-page-demo/main/Nick-After.webp"
+                 alt="Nick after full-arch transformation" loading="lazy">
+            <span class="ba-img-label">After</span>
+          </div>
+          <div class="ba-img-divider"></div>
         </div>
         <div class="ba-card-body">
           <p class="ba-procedure">Same-Day Teeth · Upper</p>
-          <h3 class="ba-name"><em>Patient Name</em></h3>
+          <h3 class="ba-name"><em>Nick</em></h3>
           <p class="ba-loc">Grandville · 3 mo post-op</p>
           <p class="ba-quote">"I drove home with my new teeth the same day. Still can't believe it."</p>
         </div>
       </article>
 
-      <!-- Card 4 -->
       <article class="ba-card">
-        <div class="ba-card-imgwrap">
-          <div class="ba-half before"><span class="ba-half-tag">Before</span></div>
-          <div class="ba-half after"><span class="ba-half-tag">After</span></div>
-          <div class="ba-divider"></div>
+        <div class="ba-img-pair">
+          <div class="ba-img-half">
+            <img src="https://raw.githubusercontent.com/skylar-ship-it/Wmos-landing-page-demo/main/John-Before.webp"
+                 alt="John before full-arch transformation" loading="lazy">
+            <span class="ba-img-label">Before</span>
+          </div>
+          <div class="ba-img-half">
+            <img src="https://raw.githubusercontent.com/skylar-ship-it/Wmos-landing-page-demo/main/John-After.webp"
+                 alt="John after full-arch transformation" loading="lazy">
+            <span class="ba-img-label">After</span>
+          </div>
+          <div class="ba-img-divider"></div>
         </div>
         <div class="ba-card-body">
           <p class="ba-procedure">Failed Dentures → All-on-4</p>
-          <h3 class="ba-name"><em>Patient Name</em></h3>
+          <h3 class="ba-name"><em>John</em></h3>
           <p class="ba-loc">South Holland · 8 mo post-op</p>
           <p class="ba-quote">"Forty years of dentures. One day of surgery. I'd do it again tomorrow."</p>
         </div>
       </article>
 
-      <!-- Card 5 -->
       <article class="ba-card">
-        <div class="ba-card-imgwrap">
-          <div class="ba-half before"><span class="ba-half-tag">Before</span></div>
-          <div class="ba-half after"><span class="ba-half-tag">After</span></div>
-          <div class="ba-divider"></div>
+        <div class="ba-img-pair">
+          <div class="ba-img-half">
+            <img src="https://raw.githubusercontent.com/skylar-ship-it/Wmos-landing-page-demo/main/Sarah-Before.webp"
+                 alt="Sarah before full-arch transformation" loading="lazy">
+            <span class="ba-img-label">Before</span>
+          </div>
+          <div class="ba-img-half">
+            <img src="https://raw.githubusercontent.com/skylar-ship-it/Wmos-landing-page-demo/main/Sarah-After.webp"
+                 alt="Sarah after full-arch transformation" loading="lazy">
+            <span class="ba-img-label">After</span>
+          </div>
+          <div class="ba-img-divider"></div>
         </div>
         <div class="ba-card-body">
           <p class="ba-procedure">All-on-X · Lower Arch</p>
-          <h3 class="ba-name"><em>Patient Name</em></h3>
+          <h3 class="ba-name"><em>Sarah</em></h3>
           <p class="ba-loc">Grand Haven · 4 mo post-op</p>
           <p class="ba-quote">"I can chew an apple again. Such a small thing — but everything."</p>
         </div>
       </article>
 
-      <!-- Card 6 -->
       <article class="ba-card">
-        <div class="ba-card-imgwrap">
-          <div class="ba-half before"><span class="ba-half-tag">Before</span></div>
-          <div class="ba-half after"><span class="ba-half-tag">After</span></div>
-          <div class="ba-divider"></div>
+        <div class="ba-img-pair">
+          <div class="ba-img-half">
+            <img src="https://raw.githubusercontent.com/skylar-ship-it/Wmos-landing-page-demo/main/Lois-Before.webp"
+                 alt="Lois before full-arch transformation" loading="lazy">
+            <span class="ba-img-label">Before</span>
+          </div>
+          <div class="ba-img-half">
+            <img src="https://raw.githubusercontent.com/skylar-ship-it/Wmos-landing-page-demo/main/Lois-After.webp"
+                 alt="Lois after full-arch transformation" loading="lazy">
+            <span class="ba-img-label">After</span>
+          </div>
+          <div class="ba-img-divider"></div>
         </div>
         <div class="ba-card-body">
           <p class="ba-procedure">Full-Mouth Reconstruction</p>
-          <h3 class="ba-name"><em>Patient Name</em></h3>
+          <h3 class="ba-name"><em>Lois</em></h3>
           <p class="ba-loc">Grandville · 1 yr post-op</p>
           <p class="ba-quote">"Best decision I've made in a decade. My only regret is waiting."</p>
         </div>
       </article>
     </div>
 
-    <div class="ba-placeholder-note">
+    <div class="ba-placeholder-note" style="display:none;">
       <span class="label">◇ Demo · Photo placeholders</span>
       <p>In production, each card holds a real WMOS patient before/after with full-quality clinical photography. We'd source 12–20 cases for the initial gallery, with rotating featured stories.</p>
     </div>
